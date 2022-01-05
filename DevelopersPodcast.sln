@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevelopersPodcast.API", "DevelopersPodcast.API\DevelopersPodcast.API.csproj", "{C118B7FF-9289-4B2A-A1AD-34C6AE19D2ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevelopersPodcast.Infrastructure", "DevelopersPodcast.Infrastructure\DevelopersPodcast.Infrastructure.csproj", "{27576F7F-3D1F-4925-A146-E17844254296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevelopersPodcast.Application", "DevelopersPodcast.Application\DevelopersPodcast.Application.csproj", "{5532DAF0-96A8-432A-A3A0-AB241EA2E270}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C118B7FF-9289-4B2A-A1AD-34C6AE19D2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C118B7FF-9289-4B2A-A1AD-34C6AE19D2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C118B7FF-9289-4B2A-A1AD-34C6AE19D2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C118B7FF-9289-4B2A-A1AD-34C6AE19D2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27576F7F-3D1F-4925-A146-E17844254296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27576F7F-3D1F-4925-A146-E17844254296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27576F7F-3D1F-4925-A146-E17844254296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27576F7F-3D1F-4925-A146-E17844254296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5532DAF0-96A8-432A-A3A0-AB241EA2E270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5532DAF0-96A8-432A-A3A0-AB241EA2E270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5532DAF0-96A8-432A-A3A0-AB241EA2E270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5532DAF0-96A8-432A-A3A0-AB241EA2E270}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
