@@ -10,5 +10,6 @@ namespace DevelopersPodcast.Application.Episodes
         public DateTime PublishDate { get; set; }
         public string ImageUrl { get; set; }
         public string MediaUrl { get; set; }
+        public string EmbedCode { get; set; }
     }
 }

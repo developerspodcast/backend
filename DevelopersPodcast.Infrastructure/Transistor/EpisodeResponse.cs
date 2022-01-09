@@ -25,6 +25,7 @@ namespace DevelopersPodcast.Infrastructure.Transistor
         public string Image_Url { get; set; }
         public string Summary { get; set; }
         public string Description { get; set; }
+        public string Embed_Html_Dark { get; set; }
     }
 
     public class Meta

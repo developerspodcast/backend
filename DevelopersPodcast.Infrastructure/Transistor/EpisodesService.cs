@@ -43,6 +43,7 @@ namespace DevelopersPodcast.Infrastructure.Transistor
                 ImageUrl = episode.Attributes.Image_Url,
                 MediaUrl = episode.Attributes.Media_Url,
                 PublishDate = episode.Attributes.Published_At,
+                EmbedCode = episode.Attributes.Embed_Html_Dark,
             };
         }
     }
