@@ -15,7 +15,8 @@ namespace DevelopersPodcast.API
     public class Startup
     {
         public IConfiguration Configuration { get; }
-        
+        private const string AllowedOrigins = "AllowedOrigins";
+
         public Startup(IConfiguration configuration, IWebHostEnvironment environment)
         {
             Configuration = configuration;
@@ -23,6 +24,18 @@ namespace DevelopersPodcast.API
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(AllowedOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("*");
+                        builder.WithHeaders("*");
+                        builder.WithMethods("*");
+                        builder.WithExposedHeaders("*");
+                    });
+            });
+
             services.AddControllers();
             services.AddPodcastDistributor(Configuration);
         }
@@ -35,11 +48,8 @@ namespace DevelopersPodcast.API
             }
 
             app.UseRouting();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseCors(AllowedOrigins);
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }
